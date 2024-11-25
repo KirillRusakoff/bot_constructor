@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация и авторизация. Код подтверждения</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="./libs/jquery-3.7.1.js" defer></script>
+    <script src="js/verify.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="main__wrapper">
+                <div class="main__left" style="height: 100vh;">
+                    <select class="select mb-9" name="lang" id="lang">
+                        <option value="rus">Русский</option>
+                        <option value="eng">English</option>
+                        <option value="uzb">O`zbek</option>
+                    </select>
+                    <h2 class="title-1 mb-3">Добро пожаловать!</h2>
+                    <p class="text mb-3">На указанный Вами, при регистрации, телефон или электронную почту был отправлен <u>код для подтверждения регистрации</u>. Введите его ниже и нажмите "Подтвердить".</p>
+                    <form class="form form--verify mb-3">
+                        <label for="verify">Код подтверждения</label>
+                        <input type="text" name="verify" placeholder="Введите код верификации" id="verify" required>
+                        <button class="button button--ok" type="submit">Подтвердить</button>
+                    </form>
+                    <div class="main__link-back">
+                        <a href="index.html" class="button">&larr; Назад</a>
+                    </div>
+                </div>
+                <div class="main__right">
+                    <h1 class="logo mb-6">onlinesell</h1>
+                    <h2 class="title-1 mb-6">БЫСТРЫЙ СТАРТ ПРОДАЖ ДЛЯ ВАШЕГО БИЗНЕСА</h2>
+                    <p class="text mb-6">Конструктор телеграм бота и сайта для организации онлайн продаж</p>
+                    <div class="main__screenshot">
+                        <img src="./img/screenshot.png" alt="скриншот главной страницы">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

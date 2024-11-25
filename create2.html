@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание бота - настройка</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="./libs/jquery-3.7.1.js" defer></script>
+    <script src="js/create/create2.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <h1 class="logo logo--color">Onlinesell</h1>
+                <div class="header__components">
+                    <select class="select" name="lang" id="lang">
+                        <option value="rus">Русский</option>
+                        <option value="eng">English</option>
+                        <option value="uzb">O`zbek</option>
+                    </select>
+                    <button type="button" class="header__button">
+                        <img src="./img/icons/question.svg" alt="иконка помощи">
+                    </button>
+                    <a href="index.html" class="header__button">
+                        <span>Выйти</span>
+                        <img src="./img/icons/exit.svg" alt="иконка выхода">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-create">
+        <div class="container">
+            <div class="main-create__wrapper">
+                <ul class="main-create__menu mb-3">
+                    <li>
+                        <div>
+                            <img src="./img/icons/robot.svg" alt="иконка действия">
+                        </div>
+                        <span>Создание бота</span>
+                    </li>
+                    <li class="active">
+                        <div>
+                            <img src="./img/icons/gear.svg" alt="иконка действия">
+                        </div>
+                        <span>Настройка</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./img/icons/plus.svg" alt="иконка действия">
+                        </div>
+                        <span>Добавление категории</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./img/icons/plus2.svg" alt="иконка действия">
+                        </div>
+                        <span>Добавление продукта</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./img/icons/delivery.svg" alt="иконка действия">
+                        </div>
+                        <span>Доставка</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./img/icons/view.svg" alt="иконка действия">
+                        </div>
+                        <span>Предпросмотр</span>
+                    </li>
+                </ul>
+                <div class="main-create__token">
+                    <form class="form" id="form-company">
+                        <label for="company-logo" class="form__download-block mb-6">
+                            <p>
+                                <img src="./img/icons/image.svg" alt="иконка изображения">
+                                <span>Выберите или перенесите сюда логотип компании</span>
+                                <span>Формат: .jpg, .png, .svg</span>
+                                <span>Вес файла не более 10 МБ</span>
+                            </p>
+                            <input type="file" name="company-logo" id="company-logo" style="border:none;width:0;height: 0;position: absolute;">
+                        </label>
+                        <div class="form__text">
+                            <h2 class="mb-1">Языки на сайте</h2>
+                            <span style="display: block; font-size: 1.4rem;" class="mb-3">Выберите языки, которые будет поддерживать сайт</span>
+                            <div>
+                                <input class="mb-2" type="checkbox" name="rus" id="rus" checked><label for="rus">Русский</label>
+                            </div>
+                            <div>
+                                <input class="mb-2" type="checkbox" name="eng" id="eng"><label for="eng">English</label>
+                            </div>
+                            <div class="mb-6">
+                                <input class="mb-2" type="checkbox" name="uzb" id="uzb"><label for="uzb">O`zbek</label>
+                            </div>
+                            <h2 class="mb-2">О компании</h2>
+                            <textarea name="company-desc" id="company-desc" class="mb-6"></textarea>
+                            <h2 class="mb-2">Контактный номер</h2>
+                            <input type="tel" style="width: 65%;" name="company-phone" id="company-phone" class="mb-6" placeholder="Введите номер телефона">
+                            <h2 class="mb-3">Социальные сети</h2>
+                            <div class="form__grid mb-6">
+                                <div><input type="text" name="instagram" placeholder="instagram"></div>
+                                <div><input type="text" name="facebook" placeholder="facebook"></div>
+                                <div><input type="text" name="tiktok" placeholder="tiktok"></div>
+                                <div><input type="text" name="telegram" placeholder="telegram"></div>
+                                <div><input type="text" name="youtube" placeholder="youtube"></div>
+                                <div><input type="text" name="whatsapp" placeholder="whatsapp"></div>
+                            </div>
+                            <h2 class="mb-3">Валюта</h2>
+                            <select class="select select--big mb-6" name="currency" id="currency">
+                                <option value="rus" selected>RUB (Российский рубль)</option>
+                                <option value="eng">USD (Доллар США)</option>
+                                <option value="uzb">UZS (Узбекский сум)</option>
+                                <option value="sc">KRW (Южнокорейский вон)</option>
+                            </select>
+                            <h2 class="mb-3">График работы</h2>
+                            <div class="form__timetable mb-6">
+                                <div class="form__day">
+                                    <div>
+                                        <input type="checkbox" name="mon" id="mon">
+                                        <label for="mon">Понедельник</label>
+                                    </div>
+                                    <div>
+                                        <input type="time" name="mon-start" id="mon-start" value="09:00">
+                                    </div>
+                                    <div>
+                                        <input type="time" name="mon-end" id="mon-end" value="19:00">
+                                    </div>
+                                </div>
+                                <div class="form__day">
+                                    <div>
+                                        <input type="checkbox" name="tue" id="tue">
+                                        <label for="tue">Вторник</label>
+                                    </div>
+                                    <div>
+                                        <input type="time" name="tue-start" id="tue-start" value="09:00">
+                                    </div>
+                                    <div>
+                                        <input type="time" name="tue-end" id="tue-end" value="19:00">
+                                    </div>
+                                </div>
+                                <div class="form__day">
+                                    <div>
+                                        <input type="checkbox" name="wed" id="wed">
+                                        <label for="wed">Среда <span style="opacity: 0;">среда</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="time" name="wed-start" id="wed-start" value="09:00">
+                                    </div>
+                                    <div>
+                                        <input type="time" name="wed-end" id="wed-end" value="19:00">
+                                    </div>
+                                </div>
+                                <div class="form__day">
+                                    <div>
+                                        <input type="checkbox" name="thu" id="thu">
+                                        <label for="thu">Четверг</label>
+                                    </div>
+                                    <div>
+                                        <input type="time" name="thu-start" id="thu-start" value="09:00">
+                                    </div>
+                                    <div>
+                                        <input type="time" name="thu-end" id="thu-end" value="19:00">
+                                    </div>
+                                </div>
+                                <div class="form__day">
+                                    <div>
+                                        <input type="checkbox" name="fri" id="fri">
+                                        <label for="fri">Пятница<span style="opacity: 0;">пят</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="time" name="fri-start" id="fri-start" value="09:00">
+                                    </div>
+                                    <div>
+                                        <input type="time" name="fri-end" id="fri-end" value="19:00">
+                                    </div>
+                                </div>
+                                <div class="form__day">
+                                    <div>
+                                        <input type="checkbox" name="sat" id="sat">
+                                        <label for="sat">Суббота</label>
+                                    </div>
+                                    <div>
+                                        <input type="time" name="sat-start" id="sat-start" value="09:00">
+                                    </div>
+                                    <div>
+                                        <input type="time" name="sat-end" id="sat-end" value="19:00">
+                                    </div>
+                                </div>
+                                <div class="form__day">
+                                    <div>
+                                        <input type="checkbox" name="sun" id="sun">
+                                        <label for="sun">Воскресенье</label>
+                                    </div>
+                                    <div>
+                                        <input type="time" name="sun-start" id="sun-start" value="09:00">
+                                    </div>
+                                    <div>
+                                        <input type="time" name="sun-end" id="sun-end" value="19:00">
+                                    </div>
+                                </div>
+                            </div>                            
+                            <h2 class="mb-3">Адрес</h2>
+                            <input type="text" class="mb-3" name="address" placeholder="Введите адрес" style="width: 65%;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d322702.24244469195!2d68.94828527850837!3d41.28441745129764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQsNGI0LrQtdC90YIsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2sru!4v1720777834953!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="form__buttons">
+                            <a href="create.html" class="button">&larr; Назад</a>
+                            <button type="submit" class="button">Далее &rarr;</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

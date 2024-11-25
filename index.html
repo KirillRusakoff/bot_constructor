@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация и авторизация</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="./libs/jquery-3.7.1.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="main__wrapper">
+                <div class="main__left">
+                    <select class="select mb-9" name="lang" id="lang">
+                        <option value="rus">Русский</option>
+                        <option value="eng">English</option>
+                        <option value="uzb">O`zbek</option>
+                    </select>
+                    <h2 class="title-1 mb-6">Добро пожаловать!</h2>
+                    <div class="main__choises">
+                        <div class="main__choise">
+                            <input type="radio" name="radio" id="email_radio" checked>
+                            <label for="email_radio">Электронная почта</label>
+                        </div>
+                        <div class="main__choise">
+                            <input type="radio" name="radio" id="phone_radio">
+                            <label for="phone_radio">Номер телефона</label>
+                        </div>
+                    </div>
+                    <div class="forms forms--auth">
+                        <form class="form form--email" action="#" method="post">
+                            <label for="email">email</label>
+                            <input type="email" name="email" id="email" placeholder="Введите email">
+                            <label for="password">пароль</label>
+                            <input class="mb-3" type="password" name="password" id="password" placeholder="Введите пароль">
+                            <button type="submit" class="button mb-2">Войти</button>
+                            <span class="text center">Если нет аккаунта <button type="button" id="on-reg" class="button__text">Зарегистрируйтесь</button></span>
+                        </form>
+                        <form class="form form--phone" action="#" method="post">
+                            <label for="phone">телефон</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Введите номер телефона">
+                            <label for="password2">пароль</label>
+                            <input class="mb-3" type="password" name="password" id="password2" placeholder="Введите пароль">
+                            <button type="submit" class="button mb-2">Войти</button>
+                            <span class="text center">Если нет аккаунта <button type="button" id="on-reg2" class="button__text">Зарегистрируйтесь</button></span>
+                        </form>
+                    </div>
+                    <div class="forms forms--reg">
+                        <form class="form form--email form--email2">
+                            <label for="email2">email</label>
+                            <input type="email" name="email" id="email2" placeholder="Введите email" required>
+                            <label for="password3">пароль</label>
+                            <input class="mb-3" type="password" name="password" id="password3" placeholder="Введите пароль" required>
+                            <label for="password_double">повторите пароль</label>
+                            <input class="mb-3" type="password" name="password_double" id="password_double" placeholder="Введите пароль" required>
+                            <button type="submit" class="button mb-2">Зарегистрироваться</button>
+                            <span class="text center">Если есть аккаунт <button type="button" id="on-auth" class="button__text">Войдите</button></span>
+                        </form>
+                        <form class="form form--phone form--phone2">
+                            <label for="phone2">телефон</label>
+                            <input type="tel" name="phone" id="phone2" placeholder="Введите номер телефона" required>
+                            <label for="password4">пароль</label>
+                            <input class="mb-3" type="password" name="password" id="password4" placeholder="Введите пароль" required>
+                            <label for="password_double2">повторите пароль</label>
+                            <input class="mb-3" type="password" name="password_double" id="password_double2" placeholder="Введите пароль" required>
+                            <button type="submit" class="button mb-2">Зарегистрироваться</button>
+                            <span class="text center">Если есть аккаунт <button type="button" id="on-auth2" class="button__text">Войдите</button></span>
+                        </form>
+                    </div>
+                </div>
+                <div class="main__right">
+                    <h1 class="logo mb-6">onlinesell</h1>
+                    <h2 class="title-1 mb-6">БЫСТРЫЙ СТАРТ ПРОДАЖ ДЛЯ ВАШЕГО БИЗНЕСА</h2>
+                    <p class="text mb-6">Конструктор телеграм бота и сайта для организации онлайн продаж</p>
+                    <div class="main__screenshot">
+                        <img src="./img/screenshot.png" alt="скриншот главной страницы">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

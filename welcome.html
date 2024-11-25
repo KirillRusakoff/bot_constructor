@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация компании</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="./libs/jquery-3.7.1.js" defer></script>
+    <script src="js/welcome.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="main__wrapper">
+                <div class="main__left" style="height: 100vh;">
+                    <select class="select mb-3" name="lang" id="lang">
+                        <option value="rus">Русский</option>
+                        <option value="eng">English</option>
+                        <option value="uzb">O`zbek</option>
+                    </select>
+                    <h2 class="title-1 mb-3 center">Детали компании</h2>
+                    <form class="form company" id="form-company">
+                        <label for="company_name"><h3>Название компании</h3></label>
+                        <input type="text" name="company_name" id="company_name" value="Просто компания" class="mb-3">
+                        <h3 class="company__subtitle">Тип бизнеса</h3>
+                        <div class="company__type">
+                            <div>
+                                <input type="radio" name="company-type" id="type1" value="Ресторан" checked>
+                                <label for="type1">Ресторан</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="company-type" value="Онлайн магазин" id="type2">
+                                <label for="type2">Онлайн магазин</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="company-type" value="Онлайн магазин" id="type3">
+                                <label for="type3">Домашняя кухня</label>
+                            </div>
+                        </div>
+                        <h3 class="company__subtitle">Вид бизнеса</h3>
+                        <div class="company__platform">
+                            <div>
+                                <input type="radio" name="company-platform" value="Telegram" checked id="platform1">
+                                <label for="platform1">Telegram</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="company-platform" disabled id="platform2" value="Вебсайт">
+                                <label for="platform2" style="color: #999; cursor:not-allowed">Вебсайт</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="button">Далее</button>
+                        <!-- <a href="create.html" class="button" style="text-align: center;">Далее</a> -->
+                    </form>
+                </div>
+                <div class="main__right">
+                    <h1 class="logo mb-6">onlinesell</h1>
+                    <h2 class="title-1 mb-6">БЫСТРЫЙ СТАРТ ПРОДАЖ ДЛЯ ВАШЕГО БИЗНЕСА</h2>
+                    <p class="text mb-6">Конструктор телеграм бота и сайта для организации онлайн продаж</p>
+                    <div class="main__screenshot">
+                        <img src="./img/screenshot.png" alt="скриншот главной страницы">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
