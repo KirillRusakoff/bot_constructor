@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo-text {
+    color: #28a745;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #474f57;
+}
+
+.menu li:hover {
+    background-color: #474f57;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.has-submenu .submenu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.has-submenu.open .submenu {
+    display: block;
+}
+
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    width: calc(100% - 270px);
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.language-switcher select {
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.balance-container {
+    display: flex;
+    align-items: center;
+}
+
+.balance {
+    margin-right: 10px;
+}
+
+.add-balance {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icons .icon {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.stats, .charts, .traffic-and-top-products {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat, .chart, .traffic, .top-products {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 48%;
+}
+
+.stat-header, .chart-header, .traffic-header, .top-products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stat-title, .chart-title, .traffic-title, .top-products-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.stat-period select, .chart-period select, .traffic-period select, .top-products-period select {
+    padding: 5px;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.orders-limit {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.orders-limit p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.tariff-plan {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tariffs {
+    background-color: #f8f9fa;
+}
+
+.tariff-switcher {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.switch {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #ddd;
+    color: #333;
+}
+
+.switch.active {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.tariff-plans {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tariff {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.tariff h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tariff p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tariff ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tariff li {
+    margin-bottom: 10px;
+}
+
+.tariff .inactive {
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.order-counts {
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    padding-top: 2rem;
+}
+
+.order-source {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.order-source img {
+    width: 50px; /* Adjust size as necessary */
+}
+
+.count {
+    font-size: 24px;
+    font-weight: bold;
+}
+
